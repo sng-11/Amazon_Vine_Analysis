@@ -23,11 +23,16 @@ And the unpaid reviews include:
 
 <img width="664" alt="Screen Shot 2021-10-17 at 6 52 01 PM" src="https://user-images.githubusercontent.com/84816495/137647812-dabc2db1-ed9c-4ef2-909a-5c2525e9c53f.png">
 
-As seen from the above dataframe tables, we can were able to come up with the following numerical figures:
+As seen from the above dataframe tables, we come up with the following numerical figures:
 - Total number of Vine reviews: 60
 - Total number of non-Vine reviews: 14477
 - Number of 5-star Vine reviews: 34
 - Number of 5-star non-Vine reviews: 8212
+- % of Vine reviews that were 5-stars: 0.412%
+- % of non-Vine reviews that were 5-stars: 99.6%
 
 
 ## Summary
+
+From our above analysis, it is clear that there is __NO__ positivity bias for reviews in the Amazon Vine program. Close to all (99.6%) of the 5-star reviews were unpaid, and on the contrary, 0.41% of the 5-star reviews were paid. This seems to suggest that being a part of the program did not exactly incentivize users to give high ratings.
+However, 5-star ratings are not the only positive ratings. It will be beneficial to conduct the same analysis as the above but for __4-star ratings__ to determine if there may be a difference between paid vs. unpaid there. This can be done with almost the same code as above but changing the filter criterion to have "star-rating == '4'" instead. 
